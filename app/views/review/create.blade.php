@@ -15,6 +15,14 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h2>Review een vak</h2>
+				
+				
+				<! -- 
+				if validation is unsuccessful, show an error message here
+				<div class="alert alert-danger" role="alert">...</div>
+				-->
+
+
 				<form role="form" method="post">
 				  <div class="form-group">
 				    <label for="course">Selecteer het vak waarvoor u een review wil achterlaten</label>

@@ -23,7 +23,7 @@ class ReviewTest extends TestCase {
 
 		$input = array(
 			'rating' => 4,
-			'course_id' => 1,
+			'course_id' => 'PHP 2',
 			'tips' => ''
 		);
 

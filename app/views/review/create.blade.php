@@ -17,16 +17,16 @@
 				<h2>Review een vak</h2>
 				
 				
-				<! -- 
-				if validation is unsuccessful, show an error message here
-				<div class="alert alert-danger" role="alert">...</div>
-				-->
+				
+
+				<div class="alert alert-danger" role="alert">{{ $messages or "" }}...</div>
+				
 
 
 				<form role="form" method="post">
 				  <div class="form-group">
 				    <label for="course">Selecteer het vak waarvoor u een review wil achterlaten</label>
-				    <select class="form-control" id="course" name="course">
+				    <select class="form-control" id="course" name="course_id">
 					  <option>PHP 1</option>
 					  <option>PHP 2</option>
 					  <option>Webserverbeheer</option>
@@ -35,13 +35,13 @@
 
 					<div class="form-group">
 						<label for="rating">Selecteer uw rating</label>
-						<input type="range" id="rating" min="1" max="5" value="3">
+						<input type="range" id="rating" min="1" max="5" value="3" name="rating">
 						<p class="bg-info" id="currentRating" style="display: inline-block; padding: 0.3em;">U selecteerde 3</p>
 					</div>
 
 					<div class="form-group">
 						<label for="tips">Geef anoniem tips om het vak beter te maken:</label>
-						<textarea id="tips" class="form-control" rows="3"></textarea>
+						<textarea id="tips" name="tips" class="form-control" rows="3"></textarea>
 					</div>
 				
 					<button type="submit" class="btn btn-success">Review verzenden</button>
